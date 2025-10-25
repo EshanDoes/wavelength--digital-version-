@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdak4o3njegvw"]
+
+[ext_resource type="Texture2D" uid="uid://1ujc8g15k8a5" path="res://sprites/board/boardtarget.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://brq28asvb3ok3" path="res://sprites/board/boardtop.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://br2xcf8kanvej" path="res://scripts/targetrandomizer.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://x3mcta2tdgs4" path="res://sprites/board/boardselector.png" id="4_1bvp3"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.886275, 0.894118, 0.866667, 1)
+polygon = PackedVector2Array(578, 54, 524, 63, 524, 63, 482, 84, 438, 119, 415, 144, 397, 179, 382, 217, 378, 273, 791, 274, 792, 248, 781, 202, 760, 166, 742, 137, 703, 97, 667, 73)
+
+[node name="Board Target" type="Node2D" parent="."]
+position = Vector2(584, 262)
+script = ExtResource("2_h2yge")
+
+[node name="Target Sprite" type="Sprite2D" parent="Board Target"]
+texture = ExtResource("1_0xm2m")
+offset = Vector2(0, -100)
+
+[node name="4 Point Collision" type="CollisionPolygon2D" parent="Board Target"]
+polygon = PackedVector2Array(-14, -201, 14, -201, 1, 1)
+
+[node name="3 Point Collision" type="CollisionPolygon2D" parent="Board Target"]
+polygon = PackedVector2Array(-42, -197, -14, -200, 14, -201, 43, -196, 1, 1)
+
+[node name="2 Point Collision" type="CollisionPolygon2D" parent="Board Target"]
+polygon = PackedVector2Array(-42, -197, -14, -200, 14, -201, 43, -196, 71, -188, 1, 1, -71, -188)
+
+[node name="Board Cover" type="Node2D" parent="."]
+position = Vector2(584, 262)
+rotation = 3.14159
+
+[node name="Polygon2D2" type="Polygon2D" parent="Board Cover"]
+position = Vector2(-584, -262)
+color = Color(0.690196, 0.823529, 0.756863, 1)
+polygon = PackedVector2Array(585.085, 58.5084, 551, 64, 521, 73, 496.312, 82.3788, 473.529, 94.2918, 457.992, 103.864, 443.771, 114.943, 431.425, 129.694, 415.023, 151.964, 406.814, 168.415, 398.605, 184.865, 389.995, 209.399, 383.612, 241.837, 380.465, 265.818, 793.048, 264.785, 787.234, 239.502, 781.882, 216.408, 773.02, 191.285, 759.188, 161.257, 742.431, 138.471, 720.732, 114.931, 698.279, 96.3335, 673.725, 80.9768, 652.862, 71.2436, 625.255, 63.6367)
+
+[node name="Board Top" type="Sprite2D" parent="."]
+position = Vector2(585, 325)
+texture = ExtResource("1_ig7tw")
+
+[node name="Board Selector" type="Sprite2D" parent="."]
+position = Vector2(585, 264)
+texture = ExtResource("4_1bvp3")
+offset = Vector2(0, -75)
