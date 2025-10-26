@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cdak4o3njegvw"]
+[gd_scene load_steps=9 format=3 uid="uid://cdak4o3njegvw"]
 
 [ext_resource type="Texture2D" uid="uid://1ujc8g15k8a5" path="res://sprites/board/boardtarget.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://brq28asvb3ok3" path="res://sprites/board/boardtop.png" id="1_ig7tw"]
@@ -9,6 +9,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
 size = Vector2(0.5, 13)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
+font_size = 44
 
 [node name="Main" type="Node2D"]
 
@@ -24,13 +27,19 @@ script = ExtResource("2_h2yge")
 texture = ExtResource("1_0xm2m")
 offset = Vector2(0, -100)
 
-[node name="4 Point Collision" type="CollisionPolygon2D" parent="Target"]
+[node name="4point" type="Area2D" parent="Target"]
+
+[node name="4 Point Collision" type="CollisionPolygon2D" parent="Target/4point"]
 polygon = PackedVector2Array(-14, -201, 14, -201, 1, 1)
 
-[node name="3 Point Collision" type="CollisionPolygon2D" parent="Target"]
+[node name="3point" type="Area2D" parent="Target"]
+
+[node name="3 Point Collision" type="CollisionPolygon2D" parent="Target/3point"]
 polygon = PackedVector2Array(-42, -197, -14, -200, 14, -201, 43, -196, 1, 1)
 
-[node name="2 Point Collision" type="CollisionPolygon2D" parent="Target"]
+[node name="2point" type="Area2D" parent="Target"]
+
+[node name="2 Point Collision" type="CollisionPolygon2D" parent="Target/2point"]
 polygon = PackedVector2Array(-42, -197, -14, -200, 14, -201, 43, -196, 71, -188, 1, 1, -71, -188)
 
 [node name="Board Cover" type="StaticBody2D" parent="."]
@@ -55,6 +64,26 @@ script = ExtResource("4_lquwl")
 texture = ExtResource("4_1bvp3")
 offset = Vector2(0, -75)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Selector"]
-position = Vector2(0, -190)
+[node name="collision" type="Area2D" parent="Selector"]
+position = Vector2(-1, -2)
+monitoring = false
+
+[node name="Hitbox" type="CollisionShape2D" parent="Selector/collision"]
+position = Vector2(1, -188)
 shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="Points Counter" type="Label" parent="."]
+offset_left = 932.0
+offset_right = 1137.0
+offset_bottom = 61.0
+text = "0"
+label_settings = SubResource("LabelSettings_7mycd")
+horizontal_alignment = 2
+justification_flags = 162
+
+[connection signal="area_entered" from="Target/4point" to="Selector" method="four_entered"]
+[connection signal="area_exited" from="Target/4point" to="Selector" method="four_exited"]
+[connection signal="area_entered" from="Target/3point" to="Selector" method="three_entered"]
+[connection signal="area_exited" from="Target/3point" to="Selector" method="three_exited"]
+[connection signal="area_entered" from="Target/2point" to="Selector" method="two_entered"]
+[connection signal="area_exited" from="Target/2point" to="Selector" method="two_exited"]
