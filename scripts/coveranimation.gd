@@ -9,16 +9,18 @@ func _input(event):
 
 # Cover opening animation
 func CoverOpen(animationTime):
+	$slidingsfx.play()
+	
 	for i in animationTime:
 		self.rotation_degrees = ease(i/animationTime, 0.3) * 180
 		await get_tree().create_timer(0.01).timeout
-		
-		print(self.rotation_degrees)
+		#print(self.rotation_degrees)
 
 # Cover closing animation
 func CoverClose(animationTime):
+	$slidingsfx.play()
+	
 	for i in animationTime:
-		self.rotation_degrees = 180 + round(-ease(i/animationTime, 0.3) * 180)
+		self.rotation_degrees = 180 - round(ease(i/animationTime, 0.3) * 180)
 		await get_tree().create_timer(0.01).timeout
-		
-		print(self.rotation_degrees)
+		#print(self.rotation_degrees)

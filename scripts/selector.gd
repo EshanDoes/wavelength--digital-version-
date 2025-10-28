@@ -16,34 +16,45 @@ func _process(delta):
 func _input(event):
 	if(event.is_action_pressed("click") and $"/root/Main/Board Cover".rotation_degrees == 0):
 		totalpoints += pointsadded
-		$"/root/Main/Points Counter".text = str(totalpoints)
+		
+		await get_tree().create_timer(3.8).timeout
+		textEffect(25.0)
 
 # Detect collision (slightly unoptimized)
 func four_entered(area: Area2D) -> void:
 	pointsadded = 4
-	
 	print("Four point entered.")
 func four_exited(area: Area2D) -> void:
 	if pointsadded == 4:
 		pointsadded = 3
-		
 	print("Four point exited.")
 func three_entered(area: Area2D) -> void:
 	if pointsadded == 2:
 		pointsadded = 3
-		
 	print("Three point entered.")
 func three_exited(area: Area2D) -> void:
 	if pointsadded >= 3:
 		pointsadded = 2
-		
 	print("Three point exited.")
 func two_entered(area: Area2D) -> void:
 	if pointsadded == 0:
 		pointsadded = 2
-		
 	print("Two point entered.")
 func two_exited(area: Area2D) -> void:
 	pointsadded = 0
-	
 	print("Two point exited.")
+
+# Text points effect for extra juice
+func textEffect(animationTime):
+	var currentColor = Color(1.0, 0.7, 0.0, 1.0)
+	$"/root/Main/Points Counter".text = str(totalpoints)
+	
+	for i in animationTime:
+		var currentEase = ease(i/animationTime, 0.4)
+		
+		currentColor = Color(1.0, currentEase*0.3+0.7, currentEase, 1.0)
+		$"/root/Main/Points Counter".label_settings.font_color = currentColor
+		
+		$"/root/Main/Points Counter".position.y = currentEase*-10 + 10
+		
+		await get_tree().create_timer(0.01).timeout
