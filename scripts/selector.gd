@@ -9,12 +9,12 @@ var totalpoints = 0
 func _process(delta):
 	direction = rad_to_deg(get_global_mouse_position().angle_to_point(position)) - 90
 	
-	if(not(direction > 90 or direction < -90)):
+	if(not(direction > 90 or direction < -90) and $"/root/Main/Board Cover".rotation_degrees == 0):
 		rotation_degrees = direction
 
 # Detect click and process where it is
 func _input(event):
-	if event.is_action_pressed("click"):
+	if(event.is_action_pressed("click") and $"/root/Main/Board Cover".rotation_degrees == 0):
 		totalpoints += pointsadded
 		$"/root/Main/Points Counter".text = str(totalpoints)
 

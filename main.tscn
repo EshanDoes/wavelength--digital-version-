@@ -44,7 +44,6 @@ polygon = PackedVector2Array(-42, -197, -14, -200, 14, -201, 43, -196, 71, -188,
 
 [node name="Board Cover" type="StaticBody2D" parent="."]
 position = Vector2(584, 266)
-rotation = 3.14159
 script = ExtResource("3_7mycd")
 
 [node name="Polygon2D2" type="Polygon2D" parent="Board Cover"]
@@ -61,6 +60,7 @@ position = Vector2(585, 264)
 script = ExtResource("4_lquwl")
 
 [node name="Board Selector" type="Sprite2D" parent="Selector"]
+position = Vector2(-1, 1)
 texture = ExtResource("4_1bvp3")
 offset = Vector2(0, -75)
 
