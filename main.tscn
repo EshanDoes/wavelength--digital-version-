@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cdak4o3njegvw"]
+[gd_scene load_steps=15 format=3 uid="uid://cdak4o3njegvw"]
 
 [ext_resource type="Texture2D" uid="uid://1ujc8g15k8a5" path="res://sprites/board/boardtarget.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://brq28asvb3ok3" path="res://sprites/board/boardtop.png" id="1_ig7tw"]
@@ -7,10 +7,15 @@
 [ext_resource type="Texture2D" uid="uid://x3mcta2tdgs4" path="res://sprites/board/boardselector.png" id="4_1bvp3"]
 [ext_resource type="AudioStream" uid="uid://ewqnov2ow463" path="res://sounds/sliding.ogg" id="4_272bh"]
 [ext_resource type="Script" uid="uid://dt7l7gb4psnty" path="res://scripts/selector.gd" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bme352856811p" path="res://sprites/card/leftcard.png" id="8_4c57u"]
 [ext_resource type="Script" uid="uid://cliy8teaersbg" path="res://scripts/camerazoom.gd" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://0bh773ts088m" path="res://scripts/cards.gd" id="8_efxa6"]
+[ext_resource type="Texture2D" uid="uid://nugo8nevivo0" path="res://sprites/card/rightcard.png" id="9_efxa6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
 size = Vector2(0.5, 13)
+
+[sub_resource type="LabelSettings" id="LabelSettings_efxa6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
 font_size = 44
@@ -82,6 +87,46 @@ monitoring = false
 [node name="Hitbox" type="CollisionShape2D" parent="Selector/collision"]
 position = Vector2(0, -188)
 shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="Card" type="StaticBody2D" parent="."]
+position = Vector2(578, 500)
+script = ExtResource("8_efxa6")
+
+[node name="lefthalf" type="Sprite2D" parent="Card"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-63.5, 0)
+texture = ExtResource("8_4c57u")
+region_enabled = true
+region_rect = Rect2(0, 0, 126.5, 125)
+
+[node name="righthalf" type="Sprite2D" parent="Card"]
+modulate = Color(0, 0, 0.8, 1)
+position = Vector2(63, 0)
+texture = ExtResource("9_efxa6")
+region_enabled = true
+region_rect = Rect2(52, 0, 126.5, 125)
+
+[node name="lefttext" type="Label" parent="Card"]
+offset_left = -123.0
+offset_top = -59.0
+offset_bottom = 22.0
+text = "Left
+Opposite"
+label_settings = SubResource("LabelSettings_efxa6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="righttext" type="Label" parent="Card"]
+offset_top = -59.0
+offset_right = 122.0
+offset_bottom = 22.0
+text = "Right
+Opposite"
+label_settings = SubResource("LabelSettings_efxa6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Points Counter" type="Label" parent="."]
 anchors_preset = 1

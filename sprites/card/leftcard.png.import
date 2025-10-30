@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nugo8nevivo0"
-path="res://.godot/imported/rightcard.png-5837b5100f482f9237f3f482bb7c0ace.ctex"
+uid="uid://bme352856811p"
+path="res://.godot/imported/leftcard.png-d5f035fef7e43b07c30240dec8e656ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/board/rightcard.png"
-dest_files=["res://.godot/imported/rightcard.png-5837b5100f482f9237f3f482bb7c0ace.ctex"]
+source_file="res://sprites/card/leftcard.png"
+dest_files=["res://.godot/imported/leftcard.png-d5f035fef7e43b07c30240dec8e656ea.ctex"]
 
 [params]
 
