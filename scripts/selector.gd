@@ -17,8 +17,10 @@ func _input(event):
 	if(event.is_action_pressed("click") and $"/root/Main/Board Cover".rotation_degrees == 0):
 		totalpoints += pointsadded
 		
-		await get_tree().create_timer(3.8).timeout
-		textEffect(25.0)
+		if(not pointsadded == 0):
+			await get_tree().create_timer(3.8).timeout
+			textEffect(25.0)
+			print("Text updated!")
 
 # Detect collision (slightly unoptimized)
 func four_entered(area: Area2D) -> void:

@@ -21,26 +21,26 @@ data = {
 "left_side": "Out of its time",
 "right_side": "Ahead of its time"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Big Building",
+"right_side": "Small Building"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Weak",
+"right_side": "Strong"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Short Word",
+"right_side": "Long Word"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Best spot for vacation",
+"right_side": "Worst spot for vacation"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Serious Media",
+"right_side": "Comedic Media"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Hot",
+"right_side": "Cold"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Skillful Game",
+"right_side": "Lucky Game"
 }, {
 "left_side": " ",
 "right_side": " "
