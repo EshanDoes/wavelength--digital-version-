@@ -31,3 +31,4 @@ click={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.291575, 0.553171, 0.865373, 1)

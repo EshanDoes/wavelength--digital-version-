@@ -1,0 +1,156 @@
+[gd_resource type="JSON" format=3 uid="uid://63ehbps0pvfu"]
+
+[resource]
+data = {
+"opposites_list": [{
+"left_side": "Good Music",
+"right_side": "Bad Music"
+}, {
+"left_side": "Greedy Company",
+"right_side": "Honest Company"
+}, {
+"left_side": "Expensive Product",
+"right_side": "Cheap Product"
+}, {
+"left_side": "Productive Task",
+"right_side": "Simple Task"
+}, {
+"left_side": "Short-term Goal",
+"right_side": "Long-term Goal"
+}, {
+"left_side": "Out of its time",
+"right_side": "Ahead of its time"
+}, {
+"left_side": "Big Building",
+"right_side": "Small Building"
+}, {
+"left_side": "Weak",
+"right_side": "Strong"
+}, {
+"left_side": "Short Word",
+"right_side": "Long Word"
+}, {
+"left_side": "Best spot for vacation",
+"right_side": "Worst spot for vacation"
+}, {
+"left_side": "Serious Media",
+"right_side": "Comedic Media"
+}, {
+"left_side": "Hot",
+"right_side": "Cold"
+}, {
+"left_side": "Skillful Game",
+"right_side": "Lucky Game"
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}, {
+"left_side": " ",
+"right_side": " "
+}]
+}

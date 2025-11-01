@@ -5,16 +5,24 @@ var direction = 0
 var pointsadded = 0
 var totalpoints = 0
 
+var pointsDisplay
+var boardCover
+
+# Initializing the variables for other nodes
+func _ready():
+	pointsDisplay = $"/root/Main/Points Counter"
+	boardCover = $"/root/Main/Board Cover"
+
 # Direction facing code, taken abd modified from https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
 func _process(delta):
 	direction = rad_to_deg(get_global_mouse_position().angle_to_point(position)) - 90
 	
-	if(not(direction > 90 or direction < -90) and $"/root/Main/Board Cover".rotation_degrees == 0):
+	if(not(direction > 90 or direction < -90) and boardCover.rotation_degrees == 0):
 		rotation_degrees = direction
 
 # Detect click and process where it is
 func _input(event):
-	if(event.is_action_pressed("click") and $"/root/Main/Board Cover".rotation_degrees == 0):
+	if(event.is_action_pressed("click") and boardCover.rotation_degrees == 0):
 		totalpoints += pointsadded
 		
 		if(not pointsadded == 0):
@@ -49,14 +57,15 @@ func two_exited(area: Area2D) -> void:
 # Text points effect for extra juice
 func textEffect(animationTime):
 	var currentColor = Color(1.0, 0.7, 0.0, 1.0)
-	$"/root/Main/Points Counter".text = str(totalpoints)
+	pointsDisplay.text = str(totalpoints)
+	$pointsfx.play()
 	
 	for i in animationTime:
 		var currentEase = ease(i/animationTime, 0.4)
 		
 		currentColor = Color(1.0, currentEase*0.3+0.7, currentEase, 1.0)
-		$"/root/Main/Points Counter".label_settings.font_color = currentColor
+		pointsDisplay.label_settings.font_color = currentColor
 		
-		$"/root/Main/Points Counter".position.y = currentEase*-10 + 10
+		pointsDisplay.position.y = currentEase*-10 + 10
 		
 		await get_tree().create_timer(0.01).timeout

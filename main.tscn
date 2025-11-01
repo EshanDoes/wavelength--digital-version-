@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cdak4o3njegvw"]
+[gd_scene load_steps=17 format=3 uid="uid://cdak4o3njegvw"]
 
 [ext_resource type="Texture2D" uid="uid://1ujc8g15k8a5" path="res://sprites/board/boardtarget.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://brq28asvb3ok3" path="res://sprites/board/boardtop.png" id="1_ig7tw"]
@@ -9,8 +9,10 @@
 [ext_resource type="Script" uid="uid://dt7l7gb4psnty" path="res://scripts/selector.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bme352856811p" path="res://sprites/card/leftcard.png" id="8_4c57u"]
 [ext_resource type="Script" uid="uid://cliy8teaersbg" path="res://scripts/camerazoom.gd" id="8_5vw27"]
+[ext_resource type="AudioStream" uid="uid://dwj3nkbbpa8mi" path="res://sounds/point.wav" id="8_dg77c"]
 [ext_resource type="Script" uid="uid://0bh773ts088m" path="res://scripts/cards.gd" id="8_efxa6"]
 [ext_resource type="Texture2D" uid="uid://nugo8nevivo0" path="res://sprites/card/rightcard.png" id="9_efxa6"]
+[ext_resource type="FontFile" uid="uid://d1t7tj8tiea3b" path="res://other/HATTEN.TTF" id="12_ycdy4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
 size = Vector2(0.5, 13)
@@ -18,7 +20,9 @@ size = Vector2(0.5, 13)
 [sub_resource type="LabelSettings" id="LabelSettings_efxa6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
+font = ExtResource("12_ycdy4")
 font_size = 44
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node2D"]
 
@@ -88,6 +92,9 @@ monitoring = false
 position = Vector2(0, -188)
 shape = SubResource("RectangleShape2D_1bvp3")
 
+[node name="pointsfx" type="AudioStreamPlayer2D" parent="Selector"]
+stream = ExtResource("8_dg77c")
+
 [node name="Card" type="StaticBody2D" parent="."]
 position = Vector2(578, 500)
 script = ExtResource("8_efxa6")
@@ -128,6 +135,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(578, 322)
+script = ExtResource("8_5vw27")
+
 [node name="Points Counter" type="Label" parent="."]
 anchors_preset = 1
 anchor_left = 1.0
@@ -140,10 +151,6 @@ text = "0"
 label_settings = SubResource("LabelSettings_7mycd")
 horizontal_alignment = 2
 justification_flags = 162
-
-[node name="Camera" type="Camera2D" parent="."]
-position = Vector2(578, 322)
-script = ExtResource("8_5vw27")
 
 [connection signal="area_entered" from="Target/4point" to="Selector" method="four_entered"]
 [connection signal="area_exited" from="Target/4point" to="Selector" method="four_exited"]
