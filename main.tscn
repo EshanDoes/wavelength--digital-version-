@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cdak4o3njegvw"]
+[gd_scene load_steps=19 format=3 uid="uid://cdak4o3njegvw"]
 
 [ext_resource type="Texture2D" uid="uid://1ujc8g15k8a5" path="res://sprites/board/boardtarget.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://brq28asvb3ok3" path="res://sprites/board/boardtop.png" id="1_ig7tw"]
@@ -12,12 +12,17 @@
 [ext_resource type="AudioStream" uid="uid://dwj3nkbbpa8mi" path="res://sounds/point.wav" id="8_dg77c"]
 [ext_resource type="Script" uid="uid://0bh773ts088m" path="res://scripts/cards.gd" id="8_efxa6"]
 [ext_resource type="Texture2D" uid="uid://nugo8nevivo0" path="res://sprites/card/rightcard.png" id="9_efxa6"]
+[ext_resource type="FontFile" uid="uid://bskai02xkqcx7" path="res://other/LUCON.TTF" id="12_w48qg"]
 [ext_resource type="FontFile" uid="uid://d1t7tj8tiea3b" path="res://other/HATTEN.TTF" id="12_ycdy4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
 size = Vector2(0.5, 13)
 
 [sub_resource type="LabelSettings" id="LabelSettings_efxa6"]
+font = ExtResource("12_w48qg")
+
+[sub_resource type="LabelSettings" id="LabelSettings_vivmo"]
+font = ExtResource("12_w48qg")
 
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
 font = ExtResource("12_ycdy4")
@@ -33,7 +38,6 @@ polygon = PackedVector2Array(578, 54, 524, 63, 524, 63, 482, 84, 438, 119, 415, 
 
 [node name="Target" type="StaticBody2D" parent="."]
 position = Vector2(577, 258.5)
-rotation = 1.22173
 script = ExtResource("2_h2yge")
 
 [node name="Target Sprite" type="Sprite2D" parent="Target"]
@@ -133,6 +137,23 @@ Opposite"
 label_settings = SubResource("LabelSettings_efxa6")
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="hint" type="Label" parent="Card"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.0
+offset_top = 70.0
+offset_right = 127.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Hint"
+label_settings = SubResource("LabelSettings_vivmo")
+horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Camera" type="Camera2D" parent="."]
