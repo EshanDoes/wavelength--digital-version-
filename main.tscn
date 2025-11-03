@@ -12,8 +12,8 @@
 [ext_resource type="AudioStream" uid="uid://dwj3nkbbpa8mi" path="res://sounds/point.wav" id="8_dg77c"]
 [ext_resource type="Script" uid="uid://0bh773ts088m" path="res://scripts/cards.gd" id="8_efxa6"]
 [ext_resource type="Texture2D" uid="uid://nugo8nevivo0" path="res://sprites/card/rightcard.png" id="9_efxa6"]
-[ext_resource type="FontFile" uid="uid://bskai02xkqcx7" path="res://other/LUCON.TTF" id="12_w48qg"]
-[ext_resource type="FontFile" uid="uid://d1t7tj8tiea3b" path="res://other/HATTEN.TTF" id="12_ycdy4"]
+[ext_resource type="FontFile" uid="uid://ue5pepmccubq" path="res://other/OCRAEXT.TTF" id="12_w48qg"]
+[ext_resource type="FontFile" uid="uid://cyj5aa0u6ne8h" path="res://other/BAUHS93.TTF" id="14_vivmo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
 size = Vector2(0.5, 13)
@@ -25,7 +25,7 @@ font = ExtResource("12_w48qg")
 font = ExtResource("12_w48qg")
 
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
-font = ExtResource("12_ycdy4")
+font = ExtResource("14_vivmo")
 font_size = 44
 outline_color = Color(0, 0, 0, 1)
 

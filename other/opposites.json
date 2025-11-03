@@ -1,7 +1,4 @@
-[gd_resource type="JSON" format=3 uid="uid://63ehbps0pvfu"]
-
-[resource]
-data = {
+{
 "opposites_list": [{
 "left_side": "Good Music",
 "right_side": "Bad Music"
@@ -42,23 +39,23 @@ data = {
 "left_side": "Skillful Game",
 "right_side": "Lucky Game"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Celebrity with drama daily",
+"right_side": "Celebrity with a clear record"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "The best of back then",
+"right_side": "The best of now"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Helps your life",
+"right_side": "Hurts your life"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Bad movie",
+"right_side": "Good movie"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "All in good fun",
+"right_side": "The worst of the worst"
 }, {
-"left_side": " ",
-"right_side": " "
+"left_side": "Not as it seems",
+"right_side": "Exactly as it seems"
 }, {
 "left_side": " ",
 "right_side": " "
