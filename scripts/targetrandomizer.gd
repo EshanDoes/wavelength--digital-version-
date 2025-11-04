@@ -10,7 +10,7 @@ func _ready():
 # Detect if the mouse is clicked, and randomize the target after the board animation
 func _input(event):
 	if(event.is_action_pressed("click") and $"/root/Main/Board Cover".rotation_degrees == 0):
-		await get_tree().create_timer(3).timeout
+		await get_tree().create_timer(3.5).timeout
 		
 		randomTargetPosition()
 

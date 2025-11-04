@@ -33,26 +33,26 @@ func _input(event):
 # Detect collision (slightly unoptimized)
 func four_entered(area: Area2D) -> void:
 	pointsadded = 4
-	print("Four point entered.")
+	#print("Four point entered.")
 func four_exited(area: Area2D) -> void:
 	if pointsadded == 4:
 		pointsadded = 3
-	print("Four point exited.")
+	#print("Four point exited.")
 func three_entered(area: Area2D) -> void:
 	if pointsadded == 2:
 		pointsadded = 3
-	print("Three point entered.")
+	#print("Three point entered.")
 func three_exited(area: Area2D) -> void:
 	if pointsadded >= 3:
 		pointsadded = 2
-	print("Three point exited.")
+	#print("Three point exited.")
 func two_entered(area: Area2D) -> void:
 	if pointsadded == 0:
 		pointsadded = 2
-	print("Two point entered.")
+	#print("Two point entered.")
 func two_exited(area: Area2D) -> void:
 	pointsadded = 0
-	print("Two point exited.")
+	#print("Two point exited.")
 
 # Text points effect for extra juice
 func textEffect(animationTime):

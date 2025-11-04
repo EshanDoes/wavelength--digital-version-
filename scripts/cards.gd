@@ -11,7 +11,6 @@ var oppositesJSON = "res://other/opposites.json"
 # Initialize project by generating colors and opposites
 func _ready():
 	generateOpposites()
-	
 	randomColors()
 
 # Generate a random color for each half of the card (the code Color.from_hsv(randf(), 1, 1) is taken from Copilot AI Summary)
@@ -30,9 +29,15 @@ func _input(event):
 			self.position.y = 500 + addedY
 			
 			await get_tree().create_timer(0.01).timeout
+		
 		randomColors()
 		generateOpposites()
-		await get_tree().create_timer(3).timeout
+		
+		await get_tree().create_timer(3.05).timeout
+		
+		targetPosition = round($"/root/Main/Target".rotation_degrees / 1.4) + 50
+		print(targetPosition)
+		
 		for i in 50:
 			addedY = 220 - ease(i/50.0, 0.3) * 220
 			self.position.y = 500 + addedY
@@ -60,7 +65,7 @@ func generateOpposites():
 			print("Left side: " + pair["left_side"])
 			print("Right side: " + pair["right_side"])
 			print("Number generated: " + str(random_index))
-			print(pair)
+			print(opposites_list.size())
 		else:
 			print("Invalid JSON structure.")
 	else:
