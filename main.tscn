@@ -155,6 +155,7 @@ text = "Hint"
 label_settings = SubResource("LabelSettings_vivmo")
 horizontal_alignment = 1
 autowrap_mode = 2
+visible_ratio = -0.25
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(578, 322)

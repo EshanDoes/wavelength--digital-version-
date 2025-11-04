@@ -1,78 +1,228 @@
 {
 "opposites_list": [{
 "left_side": "Good Music",
-"right_side": "Bad Music"
+"right_side": "Bad Music",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
-"left_side": "Greedy Company",
-"right_side": "Honest Company"
+"left_side": "Greedy Corperations",
+"right_side": "Honest Corperations",
+
+"left_hint": "Disney",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": "Valve",
+"right_hint": "Hack Club (wink wink)"
 }, {
 "left_side": "Expensive Product",
-"right_side": "Cheap Product"
+"right_side": "Cheap Product",
+
+"left_hint": "House",
+"mid_left_hint": "Car",
+"middle_hint": "Phone",
+"mid_right_hint": "MicroSD Card",
+"right_hint": "Costco Hot Dog"
 }, {
 "left_side": "Productive Task",
-"right_side": "Simple Task"
+"right_side": "Simple Task",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Short-term Goal",
-"right_side": "Long-term Goal"
+"right_side": "Long-term Goal",
+
+"left_hint": "Clean the room",
+"mid_left_hint": "Finish that game still in your catalogue",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Out of its time",
-"right_side": "Ahead of its time"
+"right_side": "Ahead of its time",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Big Building",
-"right_side": "Small Building"
+"right_side": "Small Building",
+
+"left_hint": "Burj Khalifa",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Weak",
-"right_side": "Strong"
+"right_side": "Strong",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Short Word",
-"right_side": "Long Word"
+"right_side": "Long Word",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Best spot for vacation",
-"right_side": "Worst spot for vacation"
+"right_side": "Worst spot for vacation",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Serious Media",
-"right_side": "Comedic Media"
+"right_side": "Comedic Media",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Hot",
-"right_side": "Cold"
+"right_side": "Cold",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Skillful Game",
-"right_side": "Lucky Game"
+"right_side": "Lucky Game",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Celebrity with drama daily",
-"right_side": "Celebrity with a clear record"
+"right_side": "Celebrity with a clear record",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "The best of back then",
-"right_side": "The best of now"
+"right_side": "The best of now",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Helps your life",
-"right_side": "Hurts your life"
+"right_side": "Hurts your life",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Bad movie",
-"right_side": "Good movie"
+"right_side": "Good movie",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "All in good fun",
-"right_side": "The worst of the worst"
+"right_side": "The worst of the worst",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Not as it seems",
-"right_side": "Exactly as it seems"
+"right_side": "Exactly as it seems",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Barely an inconvenience",
-"right_side": "Worst thing to ever happen"
+"right_side": "Worst thing to ever happen",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Loved",
-"right_side": "Hated"
+"right_side": "Hated",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Healthy",
-"right_side": "Unhealthy"
+"right_side": "Unhealthy",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Everybody has",
-"right_side": "Nobody has"
+"right_side": "Nobody has",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Smart decision",
-"right_side": "Stupid decision"
+"right_side": "Stupid decision",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }, {
 "left_side": "Requires a lot of effort",
-"right_side": "Completely effortless"
+"right_side": "Completely effortless",
+
+"left_hint": " ",
+"mid_left_hint": " ",
+"middle_hint": " ",
+"mid_right_hint": " ",
+"right_hint": " "
 }]
 }

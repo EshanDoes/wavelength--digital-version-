@@ -7,11 +7,14 @@ var addedY = 0
 var targetPosition
 
 var oppositesJSON = "res://other/opposites.json"
+var oppositesInfo
 
 # Initialize project by generating colors and opposites
 func _ready():
 	generateOpposites()
 	randomColors()
+	await get_tree().create_timer(0.05).timeout
+	getHint()
 
 # Generate a random color for each half of the card (the code Color.from_hsv(randf(), 1, 1) is taken from Copilot AI Summary)
 func randomColors():
@@ -35,9 +38,7 @@ func _input(event):
 		
 		await get_tree().create_timer(3.05).timeout
 		
-		targetPosition = round($"/root/Main/Target".rotation_degrees / 1.4) + 50
-		print(targetPosition)
-		
+		getHint()
 		for i in 50:
 			addedY = 220 - ease(i/50.0, 0.3) * 220
 			self.position.y = 500 + addedY
@@ -57,16 +58,33 @@ func generateOpposites():
 			
 			# Choose a random pair
 			var random_index = RandomNumberGenerator.new().randi_range(0, opposites_list.size()-1)
-			var pair = opposites_list[random_index]
+			oppositesInfo = opposites_list[random_index]
 			
-			$lefttext.text = pair["left_side"]
-			$righttext.text = pair["right_side"]
+			$lefttext.text = oppositesInfo["left_side"]
+			$righttext.text = oppositesInfo["right_side"]
 			
-			print("Left side: " + pair["left_side"])
-			print("Right side: " + pair["right_side"])
+			print("Left side: " + oppositesInfo["left_side"])
+			print("Right side: " + oppositesInfo["right_side"])
 			print("Number generated: " + str(random_index))
 			print(opposites_list.size())
 		else:
 			print("Invalid JSON structure.")
 	else:
 		print("Failed to open file.")
+
+func getHint():
+	targetPosition = round($"/root/Main/Target".rotation_degrees / 1.4) + 50
+	print(targetPosition)
+	
+	if targetPosition > 80:
+		$hint.text = oppositesInfo["right_hint"]
+	else: if targetPosition > 60:
+		$hint.text = oppositesInfo["mid_right_hint"]
+	else: if targetPosition > 40:
+		$hint.text = oppositesInfo["middle_hint"]
+	else: if targetPosition > 20:
+		$hint.text = oppositesInfo["mid_left_hint"]
+	else:
+		$hint.text = oppositesInfo["left_hint"]
+	
+	print($hint.text)
