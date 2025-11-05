@@ -16,4 +16,4 @@ func _input(event):
 
 # Used to generate a random position and place the target in that position
 func randomTargetPosition():
-	self.rotation_degrees = random.randi_range(-70, 70)
+	self.rotation_degrees = random.randi_range(-90, 90)

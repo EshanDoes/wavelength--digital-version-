@@ -8,6 +8,7 @@ var targetPosition
 
 var oppositesJSON = "res://other/opposites.json"
 var oppositesInfo
+var oppositeNumber
 
 # Initialize project by generating colors and opposites
 func _ready():
@@ -57,24 +58,30 @@ func generateOpposites():
 			var opposites_list = data["opposites_list"]
 			
 			# Choose a random pair
-			var random_index = RandomNumberGenerator.new().randi_range(0, opposites_list.size()-1)
-			oppositesInfo = opposites_list[random_index]
+			oppositeNumber = RandomNumberGenerator.new().randi_range(0, opposites_list.size()-1)
+			oppositesInfo = opposites_list[oppositeNumber]
 			
 			$lefttext.text = oppositesInfo["left_side"]
 			$righttext.text = oppositesInfo["right_side"]
 			
-			print("Left side: " + oppositesInfo["left_side"])
-			print("Right side: " + oppositesInfo["right_side"])
-			print("Number generated: " + str(random_index))
-			print(opposites_list.size())
+			#print("Left side: " + oppositesInfo["left_side"])
+			#print("Right side: " + oppositesInfo["right_side"])
+			print("Number generated: " + str(oppositeNumber))
+			#print(opposites_list.size())
 		else:
 			print("Invalid JSON structure.")
 	else:
 		print("Failed to open file.")
 
+# Get the hint from the JSON file and apply it
 func getHint():
-	targetPosition = round($"/root/Main/Target".rotation_degrees / 1.4) + 50
+	targetPosition = round($"/root/Main/Target".rotation_degrees / 1.8) + 50
 	print(targetPosition)
+	
+	oppositesInfo = JSON.parse_string(
+		FileAccess.open(oppositesJSON, FileAccess.READ).get_as_text()
+	)["opposites_list"][oppositeNumber]
+	print(oppositeNumber)
 	
 	if targetPosition > 80:
 		$hint.text = oppositesInfo["right_hint"]

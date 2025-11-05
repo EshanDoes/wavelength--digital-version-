@@ -1,20 +1,11 @@
 {
 "opposites_list": [{
-"left_side": "Good Music",
-"right_side": "Bad Music",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
 "left_side": "Greedy Corperations",
 "right_side": "Honest Corperations",
 
-"left_hint": "Disney",
-"mid_left_hint": " ",
-"middle_hint": " ",
+"left_hint": "Meta",
+"mid_left_hint": "Apple",
+"middle_hint": "Nintendo",
 "mid_right_hint": "Valve",
 "right_hint": "Hack Club (wink wink)"
 }, {
@@ -27,202 +18,76 @@
 "mid_right_hint": "MicroSD Card",
 "right_hint": "Costco Hot Dog"
 }, {
-"left_side": "Productive Task",
-"right_side": "Simple Task",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
 "left_side": "Short-term Goal",
 "right_side": "Long-term Goal",
 
-"left_hint": "Clean the room",
+"left_hint": "Take a bath",
 "mid_left_hint": "Finish that game still in your catalogue",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"middle_hint": "Learn a new hobby",
+"mid_right_hint": "Apply for a new job",
+"right_hint": "Save up for retirement"
 }, {
-"left_side": "Out of its time",
-"right_side": "Ahead of its time",
+"left_side": "Durable",
+"right_side": "Breakable",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Big Building",
-"right_side": "Small Building",
-
-"left_hint": "Burj Khalifa",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Weak",
-"right_side": "Strong",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "Diamond",
+"mid_left_hint": "Iron",
+"middle_hint": "Stone",
+"mid_right_hint": "Wood",
+"right_hint": "Glass"
 }, {
 "left_side": "Short Word",
 "right_side": "Long Word",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Best spot for vacation",
-"right_side": "Worst spot for vacation",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Serious Media",
-"right_side": "Comedic Media",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "Ant",
+"mid_left_hint": "Apple",
+"middle_hint": "Dinosaur",
+"mid_right_hint": "Inferencing",
+"right_hint": "Hippopatomus"
 }, {
 "left_side": "Hot",
 "right_side": "Cold",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "Fire",
+"mid_left_hint": "The beach",
+"middle_hint": "An average house",
+"mid_right_hint": "Ice cream",
+"right_hint": "Icebergs"
 }, {
 "left_side": "Skillful Game",
 "right_side": "Lucky Game",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Celebrity with drama daily",
-"right_side": "Celebrity with a clear record",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "The best of back then",
-"right_side": "The best of now",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Helps your life",
-"right_side": "Hurts your life",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "Chess",
+"mid_left_hint": "Exploding Kittens",
+"middle_hint": "Monopoly",
+"mid_right_hint": "Rock Paper Scissors",
+"right_hint": "Snakes and Ladders"
 }, {
 "left_side": "Bad movie",
 "right_side": "Good movie",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "Morbius",
+"mid_left_hint": "The Minecraft Movie",
+"middle_hint": "The Super Mario Bros. Movie",
+"mid_right_hint": "Frozen",
+"right_hint": "Jurrasic Park"
 }, {
 "left_side": "All in good fun",
-"right_side": "The worst of the worst",
+"right_side": "Bound to cause chaos",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Not as it seems",
-"right_side": "Exactly as it seems",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Barely an inconvenience",
-"right_side": "Worst thing to ever happen",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Loved",
-"right_side": "Hated",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Healthy",
-"right_side": "Unhealthy",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Everybody has",
-"right_side": "Nobody has",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
-}, {
-"left_side": "Smart decision",
-"right_side": "Stupid decision",
-
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "A game of Solitaire",
+"mid_left_hint": "A game of tic tac toe",
+"middle_hint": "A game of Mario Kart",
+"mid_right_hint": "A game of UNO",
+"right_hint": "A game of Monopoly"
 }, {
 "left_side": "Requires a lot of effort",
 "right_side": "Completely effortless",
 
-"left_hint": " ",
-"mid_left_hint": " ",
-"middle_hint": " ",
-"mid_right_hint": " ",
-"right_hint": " "
+"left_hint": "Planning out your far future",
+"mid_left_hint": "Creating a product that would sell",
+"middle_hint": "Reorganizing your area",
+"mid_right_hint": "Taking out the trash",
+"right_hint": "Getting a cup of water"
 }]
 }

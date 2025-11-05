@@ -23,6 +23,8 @@ font = ExtResource("12_w48qg")
 
 [sub_resource type="LabelSettings" id="LabelSettings_vivmo"]
 font = ExtResource("12_w48qg")
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
 font = ExtResource("14_vivmo")
@@ -155,7 +157,6 @@ text = "Hint"
 label_settings = SubResource("LabelSettings_vivmo")
 horizontal_alignment = 1
 autowrap_mode = 2
-visible_ratio = -0.25
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(578, 322)
