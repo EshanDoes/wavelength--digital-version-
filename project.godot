@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="Wavelength (Digital Version)"
+config/version="1.0"
 run/main_scene="uid://cdak4o3njegvw"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://co1wqiv5m4j6l"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
@@ -31,4 +36,5 @@ click={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0.291575, 0.553171, 0.865373, 1)
